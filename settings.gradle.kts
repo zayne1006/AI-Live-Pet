@@ -12,5 +12,5 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-rootProject.name = "AI浮窗桌宠"
+rootProject.name = "AI-Live-Pet"
 include(":app")
