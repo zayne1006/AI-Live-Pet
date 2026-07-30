@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+body { margin: 0; width: 220px; height: 220px; background: transparent; box-sizing: border-box; position: relative; }
+</style>
+</head>
+<body>
+<svg viewBox="0 0 100 100" width="100%" height="100%" style="overflow: visible;">
+  <ellipse id="body" cx="50" cy="65" rx="28" ry="22" fill="#2A2A3A"/>
+  <circle cx="50" cy="38" r="22" fill="#2A2A3A"/>
+  <polygon points="33,22 27,5 42,18" fill="#2A2A3A"/>
+  <polygon points="35,20 30,10 40,17" fill="#7C3AED"/>
+  <polygon points="67,22 73,5 58,18" fill="#2A2A3A"/>
+  <polygon points="65,20 70,10 60,17" fill="#7C3AED"/>
+  <circle id="left-eye" cx="42" cy="36" r="2.5" fill="#A78BFA"/>
+  <circle id="right-eye" cx="58" cy="36" r="2.5" fill="#A78BFA"/>
+  <ellipse cx="50" cy="43" rx="1.5" ry="1" fill="#7C3AED"/>
+  <path id="mouth" d="M47 45 Q50 47 53 45" stroke="#7C3AED" stroke-width="1.2" fill="none"/>
+  <path id="tail" d="M78 60 Q90 50 85 40" stroke="#2A2A3A" stroke-width="5" fill="none" stroke-linecap="round"/>
+</svg>
+<div id="bubble" style="position: absolute; top: 0; right: 0; background: #fff; border-radius: 10px; padding: 4px 8px; font-size: 10px; color: #333; max-width: 100px; display: none; box-shadow: 0 2px 6px rgba(0,0,0,0.3); font-family: sans-serif; word-wrap: break-word;"></div>
+<script>
+function setExpression(state) {
+  var le = document.getElementById("left-eye");
+  var re = document.getElementById("right-eye");
+  var mouth = document.getElementById("mouth");
+  var tail = document.getElementById("tail");
+  le.setAttribute("r", "2.5");
+  re.setAttribute("r", "2.5");
+  le.setAttribute("fill", "#A78BFA");
+  re.setAttribute("fill", "#A78BFA");
+  le.setAttribute("cy", "36");
+  re.setAttribute("cy", "36");
+  if (state === "IDLE") mouth.setAttribute("d", "M47 45 Q50 47 53 45");
+  else if (state === "BLINK") { le.setAttribute("r", "0.3"); re.setAttribute("r", "0.3"); }
+  else if (state === "SLEEP") { mouth.setAttribute("d", "M48 44 Q50 46 52 44"); le.setAttribute("r", "0.3"); re.setAttribute("r", "0.3"); }
+  else if (state === "ANGRY") { le.setAttribute("cy", "34"); re.setAttribute("cy", "34"); mouth.setAttribute("d", "M47 46 Q50 44 53 46"); }
+  else if (state === "SHY") { le.setAttribute("fill", "#FFB6C1"); re.setAttribute("fill", "#FFB6C1"); }
+  else if (state === "LOVE") { le.setAttribute("r", "1.5"); re.setAttribute("r", "1.5"); le.setAttribute("fill", "#EC4899"); re.setAttribute("fill", "#EC4899"); mouth.setAttribute("d", "M47 44 Q50 48 53 44"); }
+  else if (state === "EAT") { le.setAttribute("cy", "34"); re.setAttribute("cy", "34"); mouth.setAttribute("d", "M48 45 Q50 49 52 45"); }
+  else if (state === "TALK") mouth.setAttribute("d", "M48 44 Q50 48 52 44");
+  else if (state === "PEACE") { le.setAttribute("r", "1.5"); re.setAttribute("r", "1.5"); }
+}
+function setHeat(h, color) {
+  document.body.style.boxShadow = "inset 0 0 40px " + color + "55";
+}
+function showBubble(text) {
+  var b = document.getElementById("bubble");
+  b.style.display = "block";
+  b.textContent = text;
+  setTimeout(function(){ b.style.display = "none"; }, 4000);
+}
+setExpression("IDLE");
+</script>
+</body>
+</html>
