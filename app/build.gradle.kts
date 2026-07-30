@@ -23,13 +23,6 @@ android {
     kotlinOptions { jvmTarget = "17" }
     buildFeatures { compose = true }
     composeOptions { kotlinCompilerExtensionVersion = "1.8.0" }
-}
-android {
-    composeOptions {
-        kotlinCompilerExtensionVersion = "1.8.0"
-    }
-}
-android {
     packagingOptions {
         resources {
             excludes += "/META-INF/**"
