@@ -1,0 +1,159 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /sdcard/Download/Operit/android_projects/AILiveOverflow2/app/src/main/AndroidManifest.xml:2:1-71:12
+INJECTED from /sdcard/Download/Operit/android_projects/AILiveOverflow2/app/src/main/AndroidManifest.xml:2:1-71:12
+INJECTED from /sdcard/Download/Operit/android_projects/AILiveOverflow2/app/src/main/AndroidManifest.xml:2:1-71:12
+INJECTED from /sdcard/Download/Operit/android_projects/AILiveOverflow2/app/src/main/AndroidManifest.xml:2:1-71:12
+	package
+		INJECTED from /sdcard/Download/Operit/android_projects/AILiveOverflow2/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /sdcard/Download/Operit/android_projects/AILiveOverflow2/app/src/main/AndroidManifest.xml
+	xmlns:tools
+		ADDED from /sdcard/Download/Operit/android_projects/AILiveOverflow2/app/src/main/AndroidManifest.xml:3:5-51
+	android:versionCode
+		INJECTED from /sdcard/Download/Operit/android_projects/AILiveOverflow2/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /sdcard/Download/Operit/android_projects/AILiveOverflow2/app/src/main/AndroidManifest.xml:2:11-69
+uses-permission#android.permission.SYSTEM_ALERT_WINDOW
+ADDED from /sdcard/Download/Operit/android_projects/AILiveOverflow2/app/src/main/AndroidManifest.xml:5:5-78
+	android:name
+		ADDED from /sdcard/Download/Operit/android_projects/AILiveOverflow2/app/src/main/AndroidManifest.xml:5:22-75
+uses-permission#android.permission.FOREGROUND_SERVICE
+ADDED from /sdcard/Download/Operit/android_projects/AILiveOverflow2/app/src/main/AndroidManifest.xml:6:5-77
+	android:name
+		ADDED from /sdcard/Download/Operit/android_projects/AILiveOverflow2/app/src/main/AndroidManifest.xml:6:22-74
+uses-permission#android.permission.FOREGROUND_SERVICE_SPECIAL_USE
+ADDED from /sdcard/Download/Operit/android_projects/AILiveOverflow2/app/src/main/AndroidManifest.xml:7:5-89
+	android:name
+		ADDED from /sdcard/Download/Operit/android_projects/AILiveOverflow2/app/src/main/AndroidManifest.xml:7:22-86
+uses-permission#android.permission.PACKAGE_USAGE_STATS
+ADDED from /sdcard/Download/Operit/android_projects/AILiveOverflow2/app/src/main/AndroidManifest.xml:8:5-9:47
+	tools:ignore
+		ADDED from /sdcard/Download/Operit/android_projects/AILiveOverflow2/app/src/main/AndroidManifest.xml:9:9-44
+	android:name
+		ADDED from /sdcard/Download/Operit/android_projects/AILiveOverflow2/app/src/main/AndroidManifest.xml:8:22-75
+uses-permission#android.permission.POST_NOTIFICATIONS
+ADDED from /sdcard/Download/Operit/android_projects/AILiveOverflow2/app/src/main/AndroidManifest.xml:10:5-77
+	android:name
+		ADDED from /sdcard/Download/Operit/android_projects/AILiveOverflow2/app/src/main/AndroidManifest.xml:10:22-74
+uses-permission#android.permission.INTERNET
+ADDED from /sdcard/Download/Operit/android_projects/AILiveOverflow2/app/src/main/AndroidManifest.xml:11:5-67
+	android:name
+		ADDED from /sdcard/Download/Operit/android_projects/AILiveOverflow2/app/src/main/AndroidManifest.xml:11:22-64
+uses-permission#android.permission.VIBRATE
+ADDED from /sdcard/Download/Operit/android_projects/AILiveOverflow2/app/src/main/AndroidManifest.xml:12:5-66
+	android:name
+		ADDED from /sdcard/Download/Operit/android_projects/AILiveOverflow2/app/src/main/AndroidManifest.xml:12:22-63
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from /sdcard/Download/Operit/android_projects/AILiveOverflow2/app/src/main/AndroidManifest.xml:13:5-80
+	android:name
+		ADDED from /sdcard/Download/Operit/android_projects/AILiveOverflow2/app/src/main/AndroidManifest.xml:13:22-77
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from /sdcard/Download/Operit/android_projects/AILiveOverflow2/app/src/main/AndroidManifest.xml:14:5-15:38
+	android:maxSdkVersion
+		ADDED from /sdcard/Download/Operit/android_projects/AILiveOverflow2/app/src/main/AndroidManifest.xml:15:9-35
+	android:name
+		ADDED from /sdcard/Download/Operit/android_projects/AILiveOverflow2/app/src/main/AndroidManifest.xml:14:22-78
+uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
+ADDED from /sdcard/Download/Operit/android_projects/AILiveOverflow2/app/src/main/AndroidManifest.xml:16:5-81
+	android:name
+		ADDED from /sdcard/Download/Operit/android_projects/AILiveOverflow2/app/src/main/AndroidManifest.xml:16:22-78
+application
+ADDED from /sdcard/Download/Operit/android_projects/AILiveOverflow2/app/src/main/AndroidManifest.xml:18:5-70:19
+INJECTED from /sdcard/Download/Operit/android_projects/AILiveOverflow2/app/src/main/AndroidManifest.xml:18:5-70:19
+	android:extractNativeLibs
+		INJECTED from /sdcard/Download/Operit/android_projects/AILiveOverflow2/app/src/main/AndroidManifest.xml
+	android:supportsRtl
+		ADDED from /sdcard/Download/Operit/android_projects/AILiveOverflow2/app/src/main/AndroidManifest.xml:24:9-35
+	android:label
+		ADDED from /sdcard/Download/Operit/android_projects/AILiveOverflow2/app/src/main/AndroidManifest.xml:22:9-41
+	android:roundIcon
+		ADDED from /sdcard/Download/Operit/android_projects/AILiveOverflow2/app/src/main/AndroidManifest.xml:23:9-54
+	android:icon
+		ADDED from /sdcard/Download/Operit/android_projects/AILiveOverflow2/app/src/main/AndroidManifest.xml:21:9-43
+	android:allowBackup
+		ADDED from /sdcard/Download/Operit/android_projects/AILiveOverflow2/app/src/main/AndroidManifest.xml:20:9-35
+	android:theme
+		ADDED from /sdcard/Download/Operit/android_projects/AILiveOverflow2/app/src/main/AndroidManifest.xml:25:9-52
+	android:name
+		ADDED from /sdcard/Download/Operit/android_projects/AILiveOverflow2/app/src/main/AndroidManifest.xml:19:9-28
+activity#com.ailiveoverflow.MainActivity
+ADDED from /sdcard/Download/Operit/android_projects/AILiveOverflow2/app/src/main/AndroidManifest.xml:27:9-35:20
+	android:exported
+		ADDED from /sdcard/Download/Operit/android_projects/AILiveOverflow2/app/src/main/AndroidManifest.xml:29:13-36
+	android:theme
+		ADDED from /sdcard/Download/Operit/android_projects/AILiveOverflow2/app/src/main/AndroidManifest.xml:30:13-56
+	android:name
+		ADDED from /sdcard/Download/Operit/android_projects/AILiveOverflow2/app/src/main/AndroidManifest.xml:28:13-41
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /sdcard/Download/Operit/android_projects/AILiveOverflow2/app/src/main/AndroidManifest.xml:31:13-34:29
+action#android.intent.action.MAIN
+ADDED from /sdcard/Download/Operit/android_projects/AILiveOverflow2/app/src/main/AndroidManifest.xml:32:17-69
+	android:name
+		ADDED from /sdcard/Download/Operit/android_projects/AILiveOverflow2/app/src/main/AndroidManifest.xml:32:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /sdcard/Download/Operit/android_projects/AILiveOverflow2/app/src/main/AndroidManifest.xml:33:17-77
+	android:name
+		ADDED from /sdcard/Download/Operit/android_projects/AILiveOverflow2/app/src/main/AndroidManifest.xml:33:27-74
+activity#com.ailiveoverflow.ui.MainActivity
+ADDED from /sdcard/Download/Operit/android_projects/AILiveOverflow2/app/src/main/AndroidManifest.xml:37:9-40:59
+	android:exported
+		ADDED from /sdcard/Download/Operit/android_projects/AILiveOverflow2/app/src/main/AndroidManifest.xml:39:13-37
+	android:theme
+		ADDED from /sdcard/Download/Operit/android_projects/AILiveOverflow2/app/src/main/AndroidManifest.xml:40:13-56
+	android:name
+		ADDED from /sdcard/Download/Operit/android_projects/AILiveOverflow2/app/src/main/AndroidManifest.xml:38:13-44
+activity#com.ailiveoverflow.ui.SettingsActivity
+ADDED from /sdcard/Download/Operit/android_projects/AILiveOverflow2/app/src/main/AndroidManifest.xml:42:9-45:59
+	android:exported
+		ADDED from /sdcard/Download/Operit/android_projects/AILiveOverflow2/app/src/main/AndroidManifest.xml:44:13-37
+	android:theme
+		ADDED from /sdcard/Download/Operit/android_projects/AILiveOverflow2/app/src/main/AndroidManifest.xml:45:13-56
+	android:name
+		ADDED from /sdcard/Download/Operit/android_projects/AILiveOverflow2/app/src/main/AndroidManifest.xml:43:13-48
+activity#com.ailiveoverflow.ui.SkinPickerActivity
+ADDED from /sdcard/Download/Operit/android_projects/AILiveOverflow2/app/src/main/AndroidManifest.xml:47:9-50:59
+	android:exported
+		ADDED from /sdcard/Download/Operit/android_projects/AILiveOverflow2/app/src/main/AndroidManifest.xml:49:13-37
+	android:theme
+		ADDED from /sdcard/Download/Operit/android_projects/AILiveOverflow2/app/src/main/AndroidManifest.xml:50:13-56
+	android:name
+		ADDED from /sdcard/Download/Operit/android_projects/AILiveOverflow2/app/src/main/AndroidManifest.xml:48:13-50
+activity#com.ailiveoverflow.ui.SkinImportActivity
+ADDED from /sdcard/Download/Operit/android_projects/AILiveOverflow2/app/src/main/AndroidManifest.xml:52:9-55:59
+	android:exported
+		ADDED from /sdcard/Download/Operit/android_projects/AILiveOverflow2/app/src/main/AndroidManifest.xml:54:13-37
+	android:theme
+		ADDED from /sdcard/Download/Operit/android_projects/AILiveOverflow2/app/src/main/AndroidManifest.xml:55:13-56
+	android:name
+		ADDED from /sdcard/Download/Operit/android_projects/AILiveOverflow2/app/src/main/AndroidManifest.xml:53:13-50
+service#com.ailiveoverflow.overlay.OverlayService
+ADDED from /sdcard/Download/Operit/android_projects/AILiveOverflow2/app/src/main/AndroidManifest.xml:57:9-61:58
+	android:enabled
+		ADDED from /sdcard/Download/Operit/android_projects/AILiveOverflow2/app/src/main/AndroidManifest.xml:59:13-35
+	android:exported
+		ADDED from /sdcard/Download/Operit/android_projects/AILiveOverflow2/app/src/main/AndroidManifest.xml:60:13-37
+	android:foregroundServiceType
+		ADDED from /sdcard/Download/Operit/android_projects/AILiveOverflow2/app/src/main/AndroidManifest.xml:61:13-55
+	android:name
+		ADDED from /sdcard/Download/Operit/android_projects/AILiveOverflow2/app/src/main/AndroidManifest.xml:58:13-51
+receiver#com.ailiveoverflow.boot.BootReceiver
+ADDED from /sdcard/Download/Operit/android_projects/AILiveOverflow2/app/src/main/AndroidManifest.xml:63:9-69:20
+	android:exported
+		ADDED from /sdcard/Download/Operit/android_projects/AILiveOverflow2/app/src/main/AndroidManifest.xml:65:13-36
+	android:name
+		ADDED from /sdcard/Download/Operit/android_projects/AILiveOverflow2/app/src/main/AndroidManifest.xml:64:13-46
+intent-filter#action:name:android.intent.action.BOOT_COMPLETED
+ADDED from /sdcard/Download/Operit/android_projects/AILiveOverflow2/app/src/main/AndroidManifest.xml:66:13-68:29
+action#android.intent.action.BOOT_COMPLETED
+ADDED from /sdcard/Download/Operit/android_projects/AILiveOverflow2/app/src/main/AndroidManifest.xml:67:17-79
+	android:name
+		ADDED from /sdcard/Download/Operit/android_projects/AILiveOverflow2/app/src/main/AndroidManifest.xml:67:25-76
+uses-sdk
+INJECTED from /sdcard/Download/Operit/android_projects/AILiveOverflow2/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /sdcard/Download/Operit/android_projects/AILiveOverflow2/app/src/main/AndroidManifest.xml
+INJECTED from /sdcard/Download/Operit/android_projects/AILiveOverflow2/app/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /sdcard/Download/Operit/android_projects/AILiveOverflow2/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /sdcard/Download/Operit/android_projects/AILiveOverflow2/app/src/main/AndroidManifest.xml

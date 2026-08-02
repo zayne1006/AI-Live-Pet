@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "com.ailiveoverflow.app-mergeDebugResources-3:/layout/activity_skin_picker.xml",
+        "source": "com.ailiveoverflow.app-main-6:/layout/activity_skin_picker.xml"
+    },
+    {
+        "merged": "com.ailiveoverflow.app-mergeDebugResources-3:/layout/activity_main.xml",
+        "source": "com.ailiveoverflow.app-main-6:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.ailiveoverflow.app-mergeDebugResources-3:/layout/activity_supabase_config.xml",
+        "source": "com.ailiveoverflow.app-main-6:/layout/activity_supabase_config.xml"
+    },
+    {
+        "merged": "com.ailiveoverflow.app-mergeDebugResources-3:/layout/activity_toggle_settings.xml",
+        "source": "com.ailiveoverflow.app-main-6:/layout/activity_toggle_settings.xml"
+    },
+    {
+        "merged": "com.ailiveoverflow.app-mergeDebugResources-3:/layout/activity_ui_main.xml",
+        "source": "com.ailiveoverflow.app-main-6:/layout/activity_ui_main.xml"
+    }
+]

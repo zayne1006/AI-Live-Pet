@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:title="Supabase 配置"
+            android:titleTextColor="#333333"
+            android:background="@android:color/transparent"
+            app:navigationIcon="@android:drawable/ic_menu_revert" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Supabase URL"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/et_supabase_url"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="https://xxx.supabase.co"
+            android:inputType="textUri" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Supabase Key (anon)"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/et_supabase_key"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..."
+            android:inputType="textPassword" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_save_supabase"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="保存配置"
+            android:backgroundTint="#4A6FA5"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

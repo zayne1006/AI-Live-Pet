@@ -32,11 +32,9 @@ class MainActivity : ComponentActivity() {
     @Composable
     fun MainScreen() {
         val permissionOk by remember { mutableStateOf(checkAllPermissions()) }
-
         LaunchedEffect(permissionOk) {
             if (permissionOk) startService()
         }
-
         Column(
             modifier = Modifier
                 .fillMaxSize()
@@ -45,35 +43,24 @@ class MainActivity : ComponentActivity() {
             horizontalAlignment = Alignment.CenterHorizontally,
             verticalArrangement = Arrangement.Center
         ) {
-            Text("☾", fontSize = 64.sp)
+            Text("*", fontSize = 64.sp)
             Spacer(modifier = Modifier.height(16.dp))
             Text(
-                "AI 浮窗桌宠",
+                "AI Pet",
                 fontSize = 28.sp, fontWeight = FontWeight.Bold,
                 color = Color(0xFF7C3AED)
             )
-            Spacer(modifier = Modifier.height(8.dp))
-            Text(
-                "让AI住进你的手机屏幕",
-                fontSize = 14.sp, color = Color(0xFF8888AA)
-            )
             Spacer(modifier = Modifier.height(32.dp))
-
             if (permissionOk) {
-                Text("正在启动浮动窗...", fontSize = 16.sp, color = Color(0xFF10B981))
+                Text("Starting...", fontSize = 16.sp, color = Color(0xFF10B981))
             } else {
                 Button(
                     onClick = { requestOverlayPermission() },
                     shape = RoundedCornerShape(12.dp),
                     colors = ButtonDefaults.buttonColors(containerColor = Color(0xFF7C3AED))
                 ) {
-                    Text("授权浮动窗并启动", color = Color.White)
+                    Text("Enable Overlay", color = Color.White)
                 }
-                Spacer(modifier = Modifier.height(8.dp))
-                Text(
-                    "需要浮动窗、通知、使用情况访问权限",
-                    fontSize = 12.sp, color = Color(0xFF666688)
-                )
             }
         }
     }
@@ -81,9 +68,6 @@ class MainActivity : ComponentActivity() {
     private fun checkAllPermissions(): Boolean {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
             if (!Settings.canDrawOverlays(this)) return false
-        }
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
-            if (ContextCompat.checkSelfPermission(this, Manifest.permission.POST_NOTIFICATIONS) != PackageManager.PERMISSION_GRANTED) return false
         }
         return true
     }

@@ -1,0 +1,35 @@
+R_DEF: Internal format may change without notice
+local
+color ic_launcher_background
+color ic_launcher_foreground
+id btn_about
+id btn_delete
+id btn_import
+id btn_refresh
+id btn_save_supabase
+id btn_settings
+id btn_size
+id btn_skin
+id btn_start
+id btn_supabase
+id btn_switch
+id btn_switch_toggles
+id btn_usage
+id et_supabase_key
+id et_supabase_url
+id sp_skin
+id sw_auto_chat
+id sw_notify_chat
+id toolbar
+id tv_empty
+id tv_intro
+id tv_note
+layout activity_main
+layout activity_skin_picker
+layout activity_supabase_config
+layout activity_toggle_settings
+layout activity_ui_main
+mipmap ic_launcher
+mipmap ic_launcher_round
+string app_name
+style Theme.AILiveOverflow

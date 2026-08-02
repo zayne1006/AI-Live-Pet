@@ -1,0 +1,6 @@
+com.ailiveoverflow.app-resValues-0 /sdcard/Download/Operit/android_projects/AILiveOverflow2/app/build/generated/res/resValues/debug
+com.ailiveoverflow.app-packageDebugResources-1 /sdcard/Download/Operit/android_projects/AILiveOverflow2/app/build/intermediates/incremental/debug/packageDebugResources/merged.dir
+com.ailiveoverflow.app-packageDebugResources-2 /sdcard/Download/Operit/android_projects/AILiveOverflow2/app/build/intermediates/incremental/debug/packageDebugResources/stripped.dir
+com.ailiveoverflow.app-debug-3 /sdcard/Download/Operit/android_projects/AILiveOverflow2/app/build/intermediates/merged_res/debug/mergeDebugResources
+com.ailiveoverflow.app-debug-4 /sdcard/Download/Operit/android_projects/AILiveOverflow2/app/src/debug/res
+com.ailiveoverflow.app-main-5 /sdcard/Download/Operit/android_projects/AILiveOverflow2/app/src/main/res

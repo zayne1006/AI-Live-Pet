@@ -38,11 +38,4 @@ dependencies {
     implementation("androidx.compose.ui:ui-graphics")
     implementation("androidx.compose.ui:ui-tooling-preview")
     implementation("androidx.compose.material3:material3")
-    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3")
-    implementation("com.squareup.okhttp3:okhttp:4.12.0")
-    implementation("io.github.jan-tennert.supabase:postgrest-kt:2.2.1")
-    implementation("io.github.jan-tennert.supabase:realtime-kt:2.2.1")
-    implementation("io.github.jan-tennert.supabase:storage-kt:2.2.1")
-    implementation("io.ktor:ktor-client-core:2.3.7")
-    implementation("io.ktor:ktor-client-cio:2.3.7")
 }

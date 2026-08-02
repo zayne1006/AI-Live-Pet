@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.AILiveOverflow" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">#4A6FA5</item>
+        <item name="colorPrimaryDark">#3A5A8A</item>
+        <item name="colorAccent">#4A6FA5</item>
+        <item name="android:statusBarColor">#4A6FA5</item>
+    </style>
+</resources>
