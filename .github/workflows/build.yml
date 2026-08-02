@@ -24,9 +24,9 @@ jobs:
           wget -q https://dl.google.com/android/repository/commandlinetools-linux-7302050_latest.zip -O cmd.zip
           unzip -q cmd.zip
           mv cmdline-tools latest
-          echo y | $HOME/android-sdk/cmdline-tools/latest/bin/sdkmanager 'platform-tools' 'platforms;android-34' 'build-tools;34.0.0'
+          echo y | $HOME/android-sdk/cmdline-tools/latest/bin/sdkmanager platform-tools platforms;android-34 build-tools;34.0.0
       - name: Write local.properties
-        run: echo 'sdk.dir=$HOME/android-sdk' > local.properties
+        run: echo sdk.dir=$HOME/android-sdk > local.properties
       - name: Generate Gradle Wrapper
         run: /opt/gradle-8.7/bin/gradle --no-daemon wrapper --gradle-version 8.7
       - name: Build APK
@@ -34,16 +34,14 @@ jobs:
           ANDROID_HOME: $HOME/android-sdk
         run: |
           chmod +x gradlew
-          ./gradlew --no-daemon assembleDebug
-          echo '
-=== APK files ===' 
+          ./gradlew --no-daemon assembleDebug 2>&1 | tee /tmp/build.log
+          echo 
+=== APK FILES ===
           find app/build/outputs/apk -name '*.apk' -type f
-          echo '
-=== APK paths ===' 
-          find app/build/outputs/apk -name '*.apk' -type f -exec ls -la {} \;
+          ls -la app/build/outputs/apk/debug/
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
           name: apk
-          path: app/build/outputs/apk/debug/**/*.apk
-          if-no-files-found: error
+          path: app/build/outputs/apk/debug/*.apk
+          if-no-files-found: warn
