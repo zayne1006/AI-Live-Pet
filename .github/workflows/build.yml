@@ -24,7 +24,7 @@ jobs:
           wget -q https://dl.google.com/android/repository/commandlinetools-linux-7302050_latest.zip -O cmd.zip
           unzip -q cmd.zip
           mv cmdline-tools latest
-          echo y | $HOME/android-sdk/cmdline-tools/latest/bin/sdkmanager "platform-tools" "platforms;android-34" "build-tools;34.0.0"
+          echo y | $HOME/android-sdk/cmdline-tools/latest/bin/sdkmanager 'platform-tools' 'platforms;android-34' 'build-tools;34.0.0'
       - name: Write local.properties
         run: echo "sdk.dir=$HOME/android-sdk" > local.properties
       - name: Generate Gradle Wrapper
