@@ -34,12 +34,16 @@ jobs:
           ANDROID_HOME: $HOME/android-sdk
         run: |
           chmod +x gradlew
-          ./gradlew --no-daemon assembleDebug 2>&1 | tee /tmp/build.log
-      - name: Show Build Log
-        if: failure()
-        run: cat /tmp/build.log | tail -100
+          ./gradlew --no-daemon assembleDebug
+          echo '
+=== APK files ===' 
+          find app/build/outputs/apk -name '*.apk' -type f
+          echo '
+=== APK paths ===' 
+          find app/build/outputs/apk -name '*.apk' -type f -exec ls -la {} \;
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
           name: apk
-          path: app/build/outputs/apk/debug/
+          path: app/build/outputs/apk/debug/**/*.apk
+          if-no-files-found: error
