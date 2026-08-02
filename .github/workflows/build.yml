@@ -35,9 +35,8 @@ jobs:
         run: |
           chmod +x gradlew
           ./gradlew --no-daemon assembleDebug 2>&1 | tee /tmp/build.log
-          echo 
-=== APK FILES ===
-          find app/build/outputs/apk -name '*.apk' -type f
+          echo APK FILES FOUND:
+          find app/build/outputs/apk -name *.apk -type f
           ls -la app/build/outputs/apk/debug/
       - name: Upload APK
         uses: actions/upload-artifact@v4
